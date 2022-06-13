@@ -189,6 +189,8 @@ if __name__ == "__main__":
             # Check whether is dir
             if not os.path.isdir(dir_name):
                 continue
+            if class_type_dir.startswith('.'):
+                continue
 
             prefix = f"{ori_prefix}/{class_type_dir}"
 
