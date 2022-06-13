@@ -1,0 +1,26 @@
+<annotation>
+	<folder>ocd_data</folder>
+	<filename>ocd66.JPG</filename>
+	<path>/Users/mike/Desktop/ocd_data/ocd66.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1932</width>
+		<height>1932</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>face</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>233</xmin>
+			<ymin>296</ymin>
+			<xmax>1548</xmax>
+			<ymax>1616</ymax>
+		</bndbox>
+	</object>
+</annotation>
