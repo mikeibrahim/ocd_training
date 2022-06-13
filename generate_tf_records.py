@@ -74,7 +74,7 @@ class TFRecord:
         tf_sample = tf.train.Example(features=tf.train.Features(feature={
             # 'image/height': dataset_util.int64_feature(height),
             # 'image/width': dataset_util.int64_feature(width),
-            # 'image/filename': dataset_util.bytes_feature(filename),
+            'image/filename': dataset_util.bytes_feature(filename),
             'image/source_id': dataset_util.bytes_feature(filename),
             'image/encoded': dataset_util.bytes_feature(encoded_jpg),
             'image/format': dataset_util.bytes_feature(image_format),
