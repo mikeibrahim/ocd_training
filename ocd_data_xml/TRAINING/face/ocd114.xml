@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new_data_resized</folder>
+	<filename>ocd114.jpg</filename>
+	<path>/Users/mike/code/vscode_projects/ocd_training/new_data_resized/ocd114.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>face</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>92</xmin>
+			<ymin>85</ymin>
+			<xmax>182</xmax>
+			<ymax>176</ymax>
+		</bndbox>
+	</object>
+</annotation>
