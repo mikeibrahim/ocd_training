@@ -72,8 +72,8 @@ class TFRecord:
             classes.append(self.class_text_to_int(row['class']))
 
         tf_sample = tf.train.Example(features=tf.train.Features(feature={
-            # 'image/height': dataset_util.int64_feature(height),
-            # 'image/width': dataset_util.int64_feature(width),
+            'image/height': dataset_util.int64_feature(height),
+            'image/width': dataset_util.int64_feature(width),
             'image/filename': dataset_util.bytes_feature(filename),
             'image/source_id': dataset_util.bytes_feature(filename),
             'image/encoded': dataset_util.bytes_feature(encoded_jpg),
@@ -96,11 +96,8 @@ class TFRecord:
         grouped = self.split(data, 'filename')
 
         for group in grouped:
-            try:
-                tf_sample = self.create_tf(group, path)
-                writer.write(tf_sample.SerializeToString())
-            except:
-                continue
+            tf_sample = self.create_tf(group, path)
+            writer.write(tf_sample.SerializeToString())
         logging.info(
             'Successfully created the TFRecords: {}'.format(output_path))
 
